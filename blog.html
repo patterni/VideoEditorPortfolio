@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasha | blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Pasha</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html" >About</a>
+        <a href="blog.html"class="active">Blog</a>
+    </div>
+
+    <div class="main-content">
+    <h1 class="blog"> Blog</h1>
+        <div class="blog-post">
+            
+            <h2><a href="https://80.lv/articles/adobe-launches-after-effects-24-0/">Adobe Launches After Effects
+                    24.0</a></h2>
+
+            <img class="blog-image" src="After-Effects.jpg" height="300" alt="image">
+            <p class="topic">Topic: After Effects</p>
+            <p>Adobe has released After Effects 24.0, which brings several interesting features. The update introduces the Next-Gen
+            Roto Brush, now equipped with an innovative AI model. This cutting-edge technology enables faster and more accurate
+            extraction of objects from footage, significantly reducing the need for corrections.</p>
+            <h2>Discussion</h2>
+
+            <div class="comment-container">
+                <!-- Сюди будуть додані коментарі -->
+            </div>
+
+            <div class="comment-form">
+                <h3>Leave a Comment</h3>
+        <form id="commentForm1">
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name1" name="name" required>
+            </div>
+            <div>
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment1" name="comment" rows="4" required></textarea>
+            </div>
+            <button type="button" onclick="submitComment()">Submit</button>
+        </form>
+
+            </div>
+        </div>
+        <script>
+            window.addEventListener('scroll', () => {
+                    let scrollPosition = window.scrollY;
+                    let blogTitle = document.querySelector('.blog');
+                    let blogContent = document.querySelector('.blog-post h2');
+                    let blogImage = document.querySelector('.blog-image');
+                    
+                    blogTitle.style.transform = `translateY(-${scrollPosition * 0.3}px)`;
+                    blogContent.style.transform = `translateY(-${scrollPosition * 0.3}px)`;
+                    blogImage.style.transform = `translateY(-${scrollPosition * 0.3}px)`;
+                });
+        </script>
+</body>
+</html>
