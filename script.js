@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
             brand.classList.toggle('hidden');
         });
 
- function loadVideo() {
+function loadVideo() {
     const videoContainer = document.getElementById('video-container');
     videoContainer.innerHTML = `
         <iframe class="showreel-video" width="560" height="315"
@@ -51,4 +51,3 @@ window.addEventListener('scroll', () => {
             allowfullscreen></iframe>
     `;
 }
-
