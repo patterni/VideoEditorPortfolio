@@ -40,3 +40,15 @@ window.addEventListener('scroll', () => {
             navLinks.classList.toggle('show');
             brand.classList.toggle('hidden');
         });
+
+
+        function loadVideo() {
+    const videoContainer = document.getElementById('video-container');
+    videoContainer.innerHTML = `
+        <iframe class="showreel-video" width="560" height="315"
+            src="https://www.youtube.com/embed/5XxFwtlYSR4?autoplay=1" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    `;
+}
