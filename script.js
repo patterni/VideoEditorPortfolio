@@ -34,4 +34,12 @@ window.addEventListener('scroll', () => {
     introSection.style.opacity = opacity;
 });
 
+ document.getElementById('mobile-menu').addEventListener('click', function () {
+            const navLinks = document.getElementById('nav-links');
+            const brand = document.querySelector('.navbar a[href="index.html"]');
+            navLinks.classList.toggle('show');
+            brand.classList.toggle('hidden');
+        });
+
+
 

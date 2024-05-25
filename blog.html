@@ -11,12 +11,20 @@
 
 <body>
     <div class="navbar">
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <a href="blog.html" class="active mobile-only">Blog</a>
+        <div class="nav-links" id="nav-links">
         <a href="index.html">Pasha</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
         <a href="about.html" >About</a>
         <a href="blog.html"class="active">Blog</a>
+        </div>
     </div>
 
     <div class="main-content">
@@ -64,6 +72,14 @@
                     blogContent.style.transform = `translateY(-${scrollPosition * 0.3}px)`;
                     blogImage.style.transform = `translateY(-${scrollPosition * 0.3}px)`;
                 });
+
+                
+                document.getElementById('mobile-menu').addEventListener('click', function () {
+                        const navLinks = document.getElementById('nav-links');
+                        const brand = document.querySelector('.navbar a[href="blog.html"]');
+                        navLinks.classList.toggle('show');
+                        brand.classList.toggle('hidden');
+                });     
         </script>
 </body>
 </html>
