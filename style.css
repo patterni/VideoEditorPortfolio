@@ -452,3 +452,51 @@ th {
         display: none;
     }
 }
+
+/* Весь інший CSS залишаємо без змін */
+
+.youtube-player {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    background-color: black;
+    background-size: cover;
+    cursor: pointer;
+    background-position: center center;
+}
+
+.youtube-player img {
+    width: 100%;
+    top: -16.82%;
+    left: 0;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.youtube-player img:hover {
+    opacity: 1;
+}
+
+.youtube-player .play-button {
+    width: 68px;
+    height: 48px;
+    background-color: #333;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 14%;
+    transition: opacity 0.5s ease;
+}
+
+.youtube-player .play-button:hover {
+    opacity: 1;
+}
+
+.youtube-player .play-button:before {
+    content: '';
+    border-style: solid;
+    border-width: 11px 0 11px 19px;
+    border-color: transparent transparent transparent #fff;
+}
