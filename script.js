@@ -41,8 +41,7 @@ window.addEventListener('scroll', () => {
             brand.classList.toggle('hidden');
         });
 
-
-
+        
 document.addEventListener("DOMContentLoaded", function() {
     var div, n,
         v = document.getElementsByClassName("youtube-player");
@@ -68,5 +67,7 @@ function labnolIframe() {
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "1");
     iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share");
+    iframe.setAttribute("width", "560"); // Додати ширину
+    iframe.setAttribute("height", "315"); // Додати висоту
     this.parentNode.replaceChild(iframe, this);
 }
