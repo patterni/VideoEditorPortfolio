@@ -29,43 +29,36 @@
     <h1 class="portfolio-h1">Portfolio</h1>
     <div class="video-grid">
         <div class="video-item">
-            <iframe src="https://www.youtube.com/embed/5XxFwtlYSR4?si=jSlC3kYB136LllPD" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="video-container" id="video-container">
+                <img src="thumbnail.webp" class="showreel-video" alt="Showreel Thumbnail">
+                <button class="play-button" onclick="loadVideo()">Play</button>
+            </div>
             <p><i>VIDEO EDITOR SHOWREEL 2023'</i></p>
         </div>
         <div class="video-item">
-            <iframe src="https://www.youtube.com/embed/32JojlHFsso?si=zeQuf6ddoGJJG23f" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="video-container" id="video-container2">
+                <img src="thumbnail2.webp" class="showreel-video" alt="Showreel Thumbnail" height="315px">
+                <button class="play-button" onclick="loadVideo2()">Play</button>
+            </div>
             <p><i>GRAMMY 2024 ANIMATION</i></p>
         </div>
         <div class="video-item">
-            <iframe src="https://www.youtube.com/embed/qbjA2LUq464?si=cwIvPZ9aXTxQbFL5" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="video-container" id="video-container3">
+                <img src="thumbnail3.webp" class="showreel-video" alt="Showreel Thumbnail" height="315px">
+                <button class="play-button" onclick="loadVideo3()">Play</button>
+            </div>
             <p><i>LIL YACHTY EDIT</i></p>
         </div>
         <div class="video-item">
-            <iframe src="https://www.youtube.com/embed/--VIzxBllLY?si=rFdW7jTXNVM1s1fM" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+            <div class="video-container" id="video-container4">
+                <img src="thumbnail4.webp" class="showreel-video" alt="Showreel Thumbnail" height="315px">
+                <button class="play-button" onclick="loadVideo4()">Play</button>
+            </div>
             <p><i>EFFECTS DEMO</i></p>
         </div>
     </div>
 </div>
 
-<script>
-    document.getElementById('mobile-menu').addEventListener('click', function () {
-            const navLinks = document.getElementById('nav-links');
-            const brand = document.querySelector('.navbar a[href="portfolio.html"]');
-            navLinks.classList.toggle('show');
-            brand.classList.toggle('hidden');
-        });
-</script>
+<script src="portfolio-script.js"></script>
 </body>
 </html>

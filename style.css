@@ -137,7 +137,17 @@ a {
     gap: 20px;
 }
 
-.video-item iframe {
+.video-item .video-container {
+    width: 100%;
+    position: relative;
+}
+
+.video-container>img.showreel-video{
+        width: 100%;
+    height: 315px;
+}
+
+.video-item iframe{
     width: 100%;
     height: 315px;
 }
@@ -457,6 +467,10 @@ th {
         width: 100%;
         height: auto;
     }
+    
+    .video-container>img.showreel-video {
+        height: auto;
+    }
 }
 
 @media (min-width: 769px) {
@@ -477,3 +491,5 @@ th {
     padding: 0.5em 1em;
     cursor: pointer;
 }
+
+
