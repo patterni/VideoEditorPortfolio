@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasha | about</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
-</head>
+<link rel="preload" href="ArchivoBlack-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous"></head>
 <body>
     <div class="navbar">
         <div class="menu-toggle" id="mobile-menu">
@@ -30,7 +29,7 @@
         <h1>About me</h1>
 
         <div class="profile-image">
-            <img src="me.jpg" height="350" onclick="changeImage()">
+            <img src="me.webp" height="350" onclick="changeImage()">
         </div>
         <div class="about-text">
             <p>Experienced <i>self-taught</i> video editor with non-profit experience of <b>2 years</b>.</p>
@@ -49,10 +48,10 @@
 <script>
     function changeImage() {
         var image = document.getElementById("profileImage");
-        if (image.src.endsWith("me.jpg")) {
-            image.src = "me2.jpg";
+        if (image.src.endsWith("me.webp")) {
+            image.src = "me2.webp";
         } else {
-            image.src = "me.jpg";
+            image.src = "me.webp";
         }
     }
     document.getElementById('mobile-menu').addEventListener('click', function () {
